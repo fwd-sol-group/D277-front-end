@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <title>Idaho</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+  </head>
+  
+  <body>
+    <header>
+      <div class="main-head" style="text-align: center;">
+        <a href="./index.html"><img class="img-fluid" src="./img/idaho/mtns2.jpg"
+          alt="Mountain Forest" width="550px"></a>
+        <a href="./index.html"><img class="img-fluid" src="./img/idaho/Idaho_flag.jpg"
+           alt="Idaho_flag" width="600px"></a>
+           <a href="./index.html"><img class="img-fluid" src="./img/idaho/mtns1.jpg"
+            alt="Mountain Forest" width="550px"></a>
+        <h1 id="head-title">Idaho</h1>
+      </div>
+    </header>
+
+		<!-- Nav -->
+    <nav style="text-align: center;">
+      <ul>
+        <li><a href="index.html">Home</a></li>
+
+        <li><a href="capital.html">Capital</a></li>
+					
+        <li><a href="sandpoint.html">Sandpoint</a></li>
+					
+        <li><a href="bferry.html">Bonners Ferry</a></li> 
+      </ul>
+     </nav>
+
+    <div class="content-container">
+    <section>
+      <h2>About Idaho</h2>
+      <p>Idaho's history dates back to Native American tribes like the Nez Perce, Shoshone, and Bannock who inhabited the region for thousands of years before European exploration.
+        In the early 1800s, explorers and fur trappers ventured into the area, and the Lewis and Clark Expedition passed through present-day Idaho in 1805.
+        The Oregon Trail, a major route for pioneers during westward expansion, crossed through southern Idaho.
+        Idaho became a U.S. territory in 1863, and it was admitted as the 43rd state of the United States on July 3, 1890.
+        The discovery of gold in the 1860s brought a rush of settlers to the region, leading to the growth of towns and cities.</p>
+    </section>
+    <aside>
+      <p>Quick Facts about Idaho This is the Aside</p>
+      <ol>
+        <li>Idaho has over 20 million acres of public land</li>
+        <li>There are 8,941 rivers and streams</li>
+        <li>Idaho contains over 300 different wildlife species</li>
+        <li>Salmon, ID is the most isolated town. Located near the Frank Church River of No Return Wilderness</li>
+      </ol>
+      <a href="https://en.wikipedia.org/wiki/Idaho" target="_blank">Visit Wikipedia for more information</a>
+    </aside>
+    </div>
+    <div>
+    <h2 class="table-header">Idahos Largest Lakes</h2>
+      <table class="table">
+        <thead>
+          <tr class="table-info">
+            <th scope="col">Region</th>
+            <th scope="col">Name</th>
+            <th scope="col">Depth</th>
+            <th scope="col">Acreage</th>
+          </tr>
+        </thead>
+        <tbody class="table-group-divider">
+          <tr>
+            <td>North</td>
+            <td>Lake Pend Oreille</td>
+            <td>1100 ft</td>
+            <td>94,720 acres</td>
+          </tr>
+          <tr>
+            <td>SouthEast</td>
+            <td>Bear Lake</td>
+            <td>208 ft</td>
+            <td>69,758 acres</td>
+          </tr>
+          <tr>
+            <td>SouthEast</td>
+            <td>American Falls Reservoir</td>
+            <td>30 ft</td>
+            <td>55,000 acres</td>
+          </tr>
+          <tr>
+            <td>MiddleWest</td>
+            <td>Lake Cascade</td>
+            <td>26.5 ft</td>
+            <td>31,877 acres</td>
+          </tr>
+        </tbody>
+    </div>
+
+    <div class="form">
+    <form>
+      <label for="first-name">First Name:</label>
+      <input type="text" id="first-name" placeholder="Enter your first name" required>
+      <label for="last-name">Last Name:</label>
+      <input type="text" id="last-name" placeholder="Enter your last name" required>
+      <label for="email">Email:</label>
+      <input type="email" id="email" placeholder="Enter your email" required>
+      <label for="confirm-email">Confirm Email:</label>
+      <input type="email" id="confirm-email" placeholder="Confirm your email" required>
+      <label for="question">Question:</label>
+      <textarea id="question" placeholder="Enter your question"></textarea>
+      <input type="submit" value="Submit">
+    </form>
+    </div>
+
+    <script>
+      const emailField = document.getElementById("email");
+      const confirmEmailField = document.getElementById("confirm-email");
+    
+      confirmEmailField.addEventListener("input", () => {
+        if (confirmEmailField.value !== emailField.value) {
+          confirmEmailField.setCustomValidity("Emails do not match.");
+        } else {
+          confirmEmailField.setCustomValidity("");
+        }
+      });
+    </script>  
+  <div style="margin-top:200px"></div>
+	</body>
+</html>
